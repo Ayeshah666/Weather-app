@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunny Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div class="cute-frame">
+            <div class="cloud-decoration"></div>
+            <div class="app-header">
+                <h1>Bunny Weather</h1>
+                <div class="subtitle">Fluffy forecasts!</div>
+                <div class="search-box">
+                    <input type="text" id="city-input" placeholder="Where to, bunny?" class="cute-input">
+                    <button id="search-btn" class="cute-button">Hop!</button>
+                </div>
+            </div>
+            
+            <div class="weather-display">
+                <div class="weather-icon-container">
+                    <div id="weather-icon" class="weather-icon"></div>
+                </div>
+                <div class="weather-info">
+                    <div id="temperature" class="temperature">--°</div>
+                    <div id="weather-description" class="weather-description">It's a clear sky today!</div>
+                    <div id="location" class="location">Bunnyville</div>
+                </div>
+            </div>
+            
+            <div class="weather-details">
+                <div class="detail-box">
+                    <div class="detail-icon humidity-icon"></div>
+                    <div class="detail-value"><span id="humidity">--</span>%</div>
+                    <div class="detail-label">Fluffiness</div>
+                </div>
+                <div class="detail-box">
+                    <div class="detail-icon wind-icon"></div>
+                    <div class="detail-value"><span id="wind-speed">--</span> km/h</div>
+                    <div class="detail-label">Breezy hops</div>
+                </div>
+            </div>
+            
+            <div class="unit-toggle">
+                <button id="toggle-unit" class="cute-button small">Switch to °F</button>
+            </div>
+            
+            <div class="bunny-decoration"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
